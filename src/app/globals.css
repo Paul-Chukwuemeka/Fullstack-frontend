@@ -1,1 +1,21 @@
 @import "tailwindcss";
+
+/* .input-name{
+
+
+
+    &::after{
+        display: block;
+        content: "Enter your email";
+        top: 0;
+        transform: translateY(60%);
+        left: 10px;
+        position: absolute;
+    }
+
+    &:focus{
+        &::after{
+            transform: translateY(0);
+        }
+    }
+} */

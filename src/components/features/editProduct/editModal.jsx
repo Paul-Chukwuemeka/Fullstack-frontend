@@ -130,3 +130,19 @@ const EditModal = ({ data, setIsEdit }) => {
 };
 
 export default EditModal;
+
+
+
+/*
+login - header + userInfo + secret
+                |
+                jwt => localstorage
+                            |
+visit->              jwt =>  header + userInfo + secret
+
+
+              header + userInfo  + secret that is stored in env == new jwt
+
+              compare user jwt with new jwt
+              
+*/

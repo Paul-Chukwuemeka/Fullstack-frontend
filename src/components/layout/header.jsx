@@ -14,12 +14,16 @@ const Header = () => {
         </Link>
       </ul>
       <div className="flex gap-2 max-md:hidden  text-lg font-semibold items-center">
-        <button className="w-30 h-11 rounded-lg text-white bg-blue-700">
-          Sign up
-        </button>
-        <button className="w-25 h-11 rounded-lg text-white bg-blue-700">
-          Log in
-        </button>
+        <Link href={"/auth/signup"}>
+          <button className="w-30 h-11 rounded-lg text-white bg-blue-700">
+            Sign up
+          </button>
+        </Link>
+        <Link href={"/auth/login"}>
+          <button className="w-25 h-11 rounded-lg text-white bg-blue-700">
+            Log in
+          </button>
+        </Link>
       </div>
     </header>
   );
