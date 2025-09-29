@@ -36,6 +36,7 @@ const Page = () => {
         name: data.name,
         email: data.email,
         password: data.password,
+        role:"admin"
       });
       console.log(res);
   setData({
@@ -54,7 +55,7 @@ const Page = () => {
 
   return (
     <div className="w-full h-screen py-10 p-2 flex flex-col gap-15 items-center ">
-      <h1 className="text-4xl font-bold">Sign up</h1>
+      <h1 className="text-4xl font-bold">Admin Sign up</h1>
       <div className="w-full max-w-120 flex flex-col gap-4 p-4 rounded-lg h-fit shadow-[0_0_10px]">
         <div className=" relative  input-name">
           <input
