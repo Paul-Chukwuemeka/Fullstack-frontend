@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 const Card = ({ item }) => {
-  console.log(item);
   return (
     <Link href={`/${item._id}`}>
     <div className="border w-60">

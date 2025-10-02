@@ -14,13 +14,8 @@ const Page = () => {
   });
 
   async function handleLogIn() {
-    try {
-      const res = await axios.post("/api/auth/signin", data);
-      console.log(res)
-      localStorage.setItem("auth_token",res.data.token);
-    } catch (error) {
-      console.log(error);
-    }
+    const response = await axios.post("/api/auth/signin", data);
+    console.log(response.data)
   }
 
   return (
